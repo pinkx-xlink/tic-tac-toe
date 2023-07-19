@@ -30,6 +30,7 @@ body {
     display:flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 
@@ -57,7 +58,16 @@ body {
 .cell.x::before,
 .cell.x::after {
     content: '';
+    position: absolute;
     width:calc(var(--mark-size) * .15);
     height: var(--mark-size);
     background-color: black;
+}
+
+.cell.x::before {
+    transform: rotate(45deg);
+}
+
+.cell.x::after {
+    transform: rotate(-45deg);
 }
