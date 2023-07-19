@@ -31,6 +31,7 @@ body {
     justify-content: center;
     align-items: center;
     position: relative;
+    cursor: pointer;
 }
 
 
@@ -93,3 +94,7 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
+.cell.x,
+.cell.circle {
+    cursor: not-allowed;
+}
