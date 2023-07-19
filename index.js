@@ -15,7 +15,7 @@ cellElements.forEach(cell => {
 function handleClick(e) {
     const cell = e.target
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
-    placeMArk(cell, currentClass)
+    placeMark(cell, currentClass)
     //palceMark
     //check for Win
     //check for Draw

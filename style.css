@@ -1,1 +1,7 @@
-* 
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+:root {
+    --cell-width:100px;
+}
