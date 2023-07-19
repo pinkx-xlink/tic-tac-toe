@@ -50,8 +50,8 @@ function endGame(draw) {
         winningMessageTextElement.innerText = `${circleTurn ? "O's" : 
         "X's"} Wins!`
         //checks to see who won ^
-        winningMessageTextElement.classList.add('show')
     }
+    winningMessageTextElement.classList.add('show')
 }
 
 function placeMark(cell, currentClass) {
@@ -79,5 +79,3 @@ function checkWin(currentClass) {
         })
     })
 }
-
-
