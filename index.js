@@ -16,7 +16,8 @@ const WINNING_COMBINATIONS = [
     [2, 4, 6],
 ]
 const cellElements = document.querySelectorAll('[data-cell]')
-const board = document.getElementById()
+const board = document.getElementById('board')
+const winning<essageTextElement = 
 let circleTurn
 
 function startGame() {
@@ -41,7 +42,13 @@ function handleClick(e) {
     setBoardHoverClass()
 }
 
-function endGame()
+function endGame(draw) {
+    if (draw) {
+
+    } else {
+
+    }
+}
 
 function placeMark(cell, currentClass) {
     cell.classList.add(currentClass)
