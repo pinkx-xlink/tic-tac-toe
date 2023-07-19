@@ -9,6 +9,12 @@ cellElements.forEach(cell => {
     cell.addEventListener('click', handleClick, { once: true })
 })
 
+function handleClick(e) {
+    //palceMark
+    //check for Win
+    //check for Draw
+    //switch turns
+}
 
 
 // let array = [1, 2, 3];
