@@ -29,12 +29,12 @@ body {
     border: 1px solid rgb(41, 32, 32);
 }
 
-cell:first-child,
+.cell:first-child,
 .cell:nth-child(2),
-cell:nth-child(3) {
+.cell:nth-child(3) {
     border-top: none;
 }
 
-.cell:nth-child(3n = 1) {
+.cell:nth-child(3n + 1) {
     border-left: none;
 }
