@@ -27,8 +27,6 @@ function startGame() {
     setBoardHoverClass()
 }
 
-
-
 function handleClick(e) {
     const cell = e.target
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
@@ -55,12 +53,28 @@ function swapTurns() {
 function setBoardHoverClass() {
     board.classList.remove(X_CLASS)
     board.classList.remove(CIRCLE_CLASS)
-        if (circleTurn) {
-            board.classList.add(CIRCLE_CLASS)
-        } else {
-            board.classList.add(X_CLASS)
-        }
+    if (circleTurn) {
+        board.classList.add(CIRCLE_CLASS)
+    } else {
+        board.classList.add(X_CLASS)
+    }
 }
+
+function checkWin(currentClass) {
+    return WINNING_COMBINATIONS.some(combination => {
+        return combination.every(index => {
+            return cellElements[index].classList.contains
+            (currentClass)
+        })
+    })
+}
+
+
+
+
+
+
+
 // let array = [1, 2, 3];
 // let button = document.querySelector("#gameBtn");
 // button.addEventListener("click", updateArray);
