@@ -1,5 +1,5 @@
 function Gameboard() {
-    const array[9];
+    const array = 9;
     const board = [];
 }
 
