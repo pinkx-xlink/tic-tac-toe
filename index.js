@@ -35,12 +35,16 @@ function handleClick(e) {
     placeMark(cell, currentClass)
     if (checkWin(currentClass)) {
         endGame(false)
+    } else if (isDraw()) {
+        endGame(true)
+    } else {
+        swapTurns()
+        setBoardHoverClass()
+    }
     //palceMark
     //check for Win
     //check for Draw
     //switch turns
-    swapTurns()
-    setBoardHoverClass()
 }
 
 function endGame(draw) {
