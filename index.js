@@ -6,5 +6,9 @@ function Gameboard() {
 const getBoard = () => board;
 
 const takeTurn = (array, player) => {
-    
+
+}
+
+const addMark = (player) => {
+    value = player;
 }
