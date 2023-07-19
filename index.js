@@ -10,12 +10,13 @@ const board = document.getElementById()
 let circleTurn
 
 function startGame() {
+    cellElements.forEach(cell => {
+        cell.addEventListener('click', handleClick, { once: true })
+    })
     
 }
 
-cellElements.forEach(cell => {
-    cell.addEventListener('click', handleClick, { once: true })
-})
+
 
 function handleClick(e) {
     const cell = e.target
