@@ -5,10 +5,18 @@ function Gameboard() {
 
 const getBoard = () => board;
 
-const takeTurn = (array, player) => {
+// const takeTurn = (array, player) => {
 
-}
+// }
 
-const addMark = (player) => {
-    value = player;
-}
+// const addMark = (player) => {
+//     value = player;
+// }
+
+// const getValue = () => value;
+
+// return {
+//     addMark,
+//     getValue;
+// };
+// // } 
