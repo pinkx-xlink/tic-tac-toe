@@ -33,7 +33,15 @@ function swapTurns() {
     circleTurn = !circleTurn
 }
 
-function 
+function setBoardHoverClass() {
+    board.classList.remove(X_CLASS)
+    board.classList.remove(CIRCLE_CLASS)
+        if (circleTurn) {
+            board.classList.add(CIRCLE_CLASS)
+        } else {
+            board.classList.add(X_CLASS)
+        }
+}
 // let array = [1, 2, 3];
 // let button = document.querySelector("#gameBtn");
 // button.addEventListener("click", updateArray);
