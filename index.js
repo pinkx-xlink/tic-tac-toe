@@ -17,7 +17,7 @@ const WINNING_COMBINATIONS = [
 ]
 const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board')
-const winning<essageTextElement = 
+const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
 
 function startGame() {
