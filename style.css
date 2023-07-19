@@ -72,20 +72,19 @@ body {
     transform: rotate(-45deg);
 }
 
-//O marker
+
 .cell.circle::before,
 .cell.circle::after {
     content: '';
     position: absolute;
     border-radius: 50%;
-    // width:calc(var(--mark-size) * .15);
-    // height: var(--mark-size);
-    background-color: black;
+    
 }
 
 .cell.circle::before{
     width:var(--mark-size);
     height: var(--mark-size);
+    background-color: black;
 }
 
 .cell.circle::after {
