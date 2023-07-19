@@ -6,6 +6,7 @@ function Gameboard() {
 const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
 const cellElements = document.querySelectorAll('[data-cell]')
+const board = document.getElementById()
 let circleTurn
 
 cellElements.forEach(cell => {
@@ -20,6 +21,8 @@ function handleClick(e) {
     //check for Win
     //check for Draw
     //switch turns
+    swapTurns()
+    setBoardHoverClass()
 }
 
 function placeMark(cell, currentClass) {
@@ -29,6 +32,8 @@ function placeMark(cell, currentClass) {
 function swapTurns() {
     circleTurn = !circleTurn
 }
+
+function 
 // let array = [1, 2, 3];
 // let button = document.querySelector("#gameBtn");
 // button.addEventListener("click", updateArray);

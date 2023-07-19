@@ -3,7 +3,7 @@
 }
 
 :root {
-    --cell-width:100px;
+    --cell-size:100px;
 }
 
 body {
