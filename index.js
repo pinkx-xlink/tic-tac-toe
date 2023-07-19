@@ -32,8 +32,7 @@ function handleClick(e) {
     const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
     placeMark(cell, currentClass)
     if (checkWin(currentClass)) {
-
-    }
+        endGame(false)
     //palceMark
     //check for Win
     //check for Draw
@@ -41,6 +40,8 @@ function handleClick(e) {
     swapTurns()
     setBoardHoverClass()
 }
+
+function endGame()
 
 function placeMark(cell, currentClass) {
     cell.classList.add(currentClass)
@@ -63,8 +64,7 @@ function setBoardHoverClass() {
 function checkWin(currentClass) {
     return WINNING_COMBINATIONS.some(combination => {
         return combination.every(index => {
-            return cellElements[index].classList.contains
-            (currentClass)
+            return cellElements[index].classList.contains(currentClass)
         })
     })
 }
