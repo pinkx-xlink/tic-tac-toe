@@ -5,3 +5,16 @@
 :root {
     --cell-width:100px;
 }
+
+body {
+    margin: 0px;
+}
+
+.board {
+    width:100vw;
+    height:100vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-template-columns: repeat(3, auto);
+}
