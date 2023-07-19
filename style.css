@@ -90,6 +90,6 @@ body {
 .cell.circle::after {
     width: calc(var(--mark-size) * .7);
     height: calc(var(--mark-size) * .7);
-    background-color: black;
+    background-color: rgb(255, 255, 255);
 }
 
