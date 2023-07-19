@@ -13,13 +13,22 @@ cellElements.forEach(cell => {
 })
 
 function handleClick(e) {
+    const cell = e.target
+    const currentClass = circleTurn ? CIRCLE_CLASS : X_CLASS
+    placeMArk(cell, currentClass)
     //palceMark
     //check for Win
     //check for Draw
     //switch turns
 }
 
+function placeMark(cell, currentClass) {
+    cell.classList.add(currentClass)
+}
 
+function swapTurns() {
+    circleTurn = !circleTurn
+}
 // let array = [1, 2, 3];
 // let button = document.querySelector("#gameBtn");
 // button.addEventListener("click", updateArray);
