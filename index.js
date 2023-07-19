@@ -49,13 +49,20 @@ function handleClick(e) {
 
 function endGame(draw) {
     if (draw) {
-
+        winningMessageElement.innHTML = 'Draw!'
     } else {
         winningMessageTextElement.innerText = `${circleTurn ? "O's" : 
         "X's"} Wins!`
         //checks to see who won ^
     }
     winningMessageTextElement.classList.add('show')
+}
+
+function isDraw() {
+    return cellElements.every(cell => {
+        return cell.classList.contains(X_CLASS) ||
+        cell.classList.contains(CIRCLE_CLASS)   
+    })
 }
 
 function placeMark(cell, currentClass) {
