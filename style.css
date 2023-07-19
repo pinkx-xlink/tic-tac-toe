@@ -34,7 +34,6 @@ body {
     cursor: pointer;
 }
 
-
 .cell:first-child,
 .cell:nth-child(2),
 .cell:nth-child(3) {
@@ -55,6 +54,17 @@ body {
 .cell:nth-child(8) {
     border-bottom: none;
 }
+
+
+.cell.x,
+.cell.circle {
+    cursor: not-allowed;
+}
+
+.board.x .cell:hover {
+
+}
+
 
 .cell.x::before,
 .cell.x::after {
@@ -94,7 +104,3 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.cell.x,
-.cell.circle {
-    cursor: not-allowed;
-}
