@@ -4,7 +4,7 @@
 
 :root {
     --cell-size:100px;
-    --mark-size: calc(var(--cell-size) * 9);
+    --mark-size: calc(var(--cell-size) * .9);
 }
 
 body {
@@ -23,7 +23,7 @@ body {
 }
 
 .cell{
-    width: 100px;
+    width: var(--cell-size);
     height: 100px;
     background-color: rgb(255, 254, 254);
     border: 1px solid rgb(41, 32, 32);
@@ -58,4 +58,6 @@ body {
 .cell.x::after {
     content: '';
     width:calc(var(--mark-size) * .15);
+    height: var(--mark-size);
+    background-color: black;
 }
