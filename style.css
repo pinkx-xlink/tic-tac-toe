@@ -66,7 +66,8 @@ body {
 }
 
 .board.x .cell:not(.x):not(.circle):hover::before,
-.board.x .cell:not(.x):not(.circle):hover::after {
+.board.x .cell:not(.x):not(.circle):hover::after,
+.board.circle .cell:not(.x):not(.circle):hover::before {
     background-color: lightblue;
 }
 
@@ -106,7 +107,6 @@ body {
 .board.circle .cell:not(.x):not(.circle):hover::before {
     width:var(--mark-size);
     height: var(--mark-size);
-    background-color: black;
 }
 
 .cell.circle::after,
