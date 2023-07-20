@@ -21,6 +21,8 @@ winningMessageElement = document.getElementById('winningMessage')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
 
+startGame()
+
 function startGame() {
     circleTurn = false
     cellElements.forEach(cell => {
