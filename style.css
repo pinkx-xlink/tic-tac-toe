@@ -148,3 +148,7 @@ body {
     border-color:white;
     color:white;
 }
+
+.winning-message.show {
+    display: flex;
+}
