@@ -139,6 +139,7 @@ body {
     border: 2px solid tan;
     padding: .25em .5em;
     cursor: pointer;
+    border-radius: 5px;
 }
 
 .winning-message button:hover {
