@@ -1,7 +1,3 @@
-function Gameboard() {
-
-    const board = [];
-}
 
 const X_CLASS = 'x'
 const CIRCLE_CLASS = 'circle'
@@ -13,11 +9,11 @@ const WINNING_COMBINATIONS = [
     [1, 4, 7],
     [2, 5, 8],
     [0, 4, 8],
-    [2, 4, 6],
+    [2, 4, 6]
 ]
 const cellElements = document.querySelectorAll('[data-cell]')
 const board = document.getElementById('board')
-winningMessageElement = document.getElementById('winningMessage')
+const winningMessageElement = document.getElementById('winningMessage')
 const winningMessageTextElement = document.querySelector('[data-winning-message-text]')
 let circleTurn
 
