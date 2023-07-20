@@ -82,7 +82,7 @@ body {
 }
 
 .cell.x::before,
-.board.x cell:hover::before {
+.board.x cell:not(.x):not(.circle):hover::before {
     transform: rotate(45deg);
 }
 
