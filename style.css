@@ -132,3 +132,15 @@ body {
     color: white;
     font-size: 5rem;
 }
+
+.winning-message button {
+    font-size: 3rem;
+    background-color: white;
+    border: 2px solid tan;
+    padding: .25em .5em;
+    cursor: pointer;
+}
+
+.winning-message button:hover {
+
+}
