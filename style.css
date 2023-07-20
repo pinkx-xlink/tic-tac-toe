@@ -94,7 +94,7 @@ body {
 
 
 .cell.circle::before,
-.cell.circle::after 
+.cell.circle::after, 
 .board.circle .cell:not(.x):not(.circle):hover::before,
 .board.circle .cell:not(.x):not(.circle):hover::after {
     content: '';
