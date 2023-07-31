@@ -15,6 +15,9 @@ module.exports = {
             "parserOptions": {
                 "sourceType": "script"
             }
+            "extends": [
+                "prettier"
+            ]
         }
     ],
     "parserOptions": {
