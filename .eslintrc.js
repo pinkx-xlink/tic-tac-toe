@@ -14,9 +14,10 @@ module.exports = {
             ],
             "parserOptions": {
                 "sourceType": "script"
-            }
+            },
             "extends": [
-                "prettier"
+                "prettier",
+                "plugin:prettier/recommended"
             ]
         }
     ],
